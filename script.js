@@ -17,8 +17,8 @@ function attic() {
 
 function chriselda() {
     // This function is for the basement but a ghost finds you.
-    let chriseldaAnswer = prompt("The ghost of Chriselda is chasing you down the basement stairs. Do you fight her off or hide in the washroom? (write 'fight' or 'hide')");
-    if (chriseldaAnswer === "fight") {
+    let death = prompt("The ghost of Chriselda is chasing you down the basement stairs. Do you fight her off or hide in the washroom? (write 'fight' or 'hide')");
+    if (death == "fight") {
         alert("You fought Chriselda's ghost off and won, and escaped the mansion safely. CONGRATULATIONS, YOU SURVIVED");
     } else {
         alert("You get trapped in the washroom and she brutally tortures you. GAME OVER YOU DIED");
@@ -30,7 +30,7 @@ function startGame() {
     let name1 = prompt("Enter your name below.");
     alert("Welcome " + name1 + " to Chriselda's Haunted Mansion.");
     let path1 = prompt("Choose your path, will you go into the attic or to the basement? (Reply in lowercase)");
-    if (path1 === "attic") {
+    if (path1 == "attic") {
         attic();
     } else {
         chriselda(); // Call chriselda function directly for the basement path
