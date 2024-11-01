@@ -1,4 +1,4 @@
-ifunction main() {
+function main() {
     //This is the start of the game.
     alert("Welcome to Chriselda's Haunted Mansion where every decison you make decides your fate.")
     startGame();
