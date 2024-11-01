@@ -1,5 +1,5 @@
 // This is the start of the game.
-function main() {
+function startlife() {
     alert("Welcome to Chriselda's Haunted Mansion where every decision you make decides your fate.");
     startGame();
 }
@@ -18,7 +18,7 @@ function attic() {
 function chriselda() {
     // This function is for the basement but a ghost finds you. You can die by going to the washroom or survive by fighting.
     let chriseldaAnswer = prompt("The ghost of Chriselda is chasing you down the basement stairs. Do you fight her off or hide in the washroom? (write 'fight' or 'hide')");
-    if (chriseldaAnswer.toLowerCase() == "fight") {
+    if (chriseldaAnswer() == "fight") {
         alert("You fought Chriselda's ghost off and won, and escaped the mansion safely. CONGRATULATIONS, YOU SURVIVED!");
     } else {
         alert("You get trapped in the washroom and she brutally tortures you. GAME OVER, YOU DIED.");
@@ -37,4 +37,4 @@ function startGame() {
     }
 }
 
-main();
+startlife();
