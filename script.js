@@ -1,3 +1,4 @@
+// This is the start of the game.
 function main() {
     alert("Welcome to Chriselda's Haunted Mansion where every decision you make decides your fate.");
     startGame();
@@ -11,21 +12,24 @@ function attic() {
     } else {
         alert("You decide to explore the basement as the box has nothing in it.");
         chriselda();
-
-function chriselda() {
-    //This function is for the basement but a ghost finds you. in this you can die by going to the washroom as seen in the else or survive by fighting as seen in the if
-    let chriseldaAnswer = prompt("The ghost of Chriselda is chasing you down the basement stairs. Do you fight her off or hide in the washroom? (write fight or hide if you want to hide" )
-    if (chriseldaAnswer == "fight"){
-        alert("You fought the Chriselda's ghost off and won, and escaped the mansion safely. CONGRATULATIONS, YOU SURVIVED")
-    } else{
-        alert("You get trapped in the washroom and she brutally tortures you. GAME OVER YOU DIED")
     }
 }
+
+function chriselda() {
+    // This function is for the basement but a ghost finds you. You can die by going to the washroom or survive by fighting.
+    let chriseldaAnswer = prompt("The ghost of Chriselda is chasing you down the basement stairs. Do you fight her off or hide in the washroom? (write 'fight' or 'hide')");
+    if (chriseldaAnswer.toLowerCase() == "fight") {
+        alert("You fought Chriselda's ghost off and won, and escaped the mansion safely. CONGRATULATIONS, YOU SURVIVED!");
+    } else {
+        alert("You get trapped in the washroom and she brutally tortures you. GAME OVER, YOU DIED.");
+    }
+}
+
 function startGame() {
-    //Ths function gets the users name and uputs it in a sentence to welcome them. it alsso starts off the game with the first dcisonn. 
-    let name1 = prompt("enter your name below.")
-    alert("Welcome "+ name1 +" to Chriselda's Haunted Mansion.")
-    let path1 = prompt("choose your path, will you go into the attic or to the basement.(Reply in lowercase)")
+    // This function gets the user's name and outputs it in a sentence to welcome them.
+    let name1 = prompt("Enter your name below:");
+    alert("Welcome " + name1 + " to Chriselda's Haunted Mansion.");
+    let path1 = prompt("Choose your path: will you go into the attic or to the basement? (Reply in lowercase)");
     if (path1 == "attic") {
         attic();
     } else {
