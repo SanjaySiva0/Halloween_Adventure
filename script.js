@@ -1,18 +1,16 @@
 function main() {
-    //This is the start of the game.
-    alert("Welcome to Chriselda's Haunted Mansion where every decison you make decides your fate.")
+    alert("Welcome to Chriselda's Haunted Mansion where every decision you make decides your fate.");
     startGame();
 }
+
 function attic() {
-    //This is the choice to open the box or leave it alone, this funtion is for the attic and is crucial for survival. o
-    let boxanswer = prompt("Welcome to the attic! You see an old box, will you open it(1) or leave it(2) be?")
-    if (boxanswer == 1) {
-        alert("A bunch of bats fly out of the box and you die a slow and horrible death from rabies. GAME OVER")
+    // This is the choice to open the box or leave it alone, this function is for the attic and is crucial for survival.
+    let boxanswer = prompt("Welcome to the attic! You see an old box, will you open it (1) or leave it (2)?");
+    if (boxanswer == "1") {
+        alert("A bunch of bats fly out of the box and you die a slow and horrible death from rabies. GAME OVER");
     } else {
-        alert("You decide to explore the basment as the box has nothing in it.")
+        alert("You decide to explore the basement as the box has nothing in it.");
         chriselda();
-    }
-}
 
 function chriselda() {
     //This function is for the basement but a ghost finds you. in this you can die by going to the washroom as seen in the else or survive by fighting as seen in the if
